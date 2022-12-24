@@ -236,7 +236,8 @@ do{
 return (resultado)
 
 }
-console.log (doWhile(10))
+//
+// console.log (doWhile(10))
 // No modificar nada debajo de esta línea
 // --------------------------------
 

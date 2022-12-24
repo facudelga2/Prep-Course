@@ -83,19 +83,34 @@ function colors(color) {
     return ("Color not found")
   }
 }
-console.log(colors("oras")); 
+// console.log(colors("oras")); 
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  // if(numero === 10 || numero === 5){
+  //   return true
+  // } else {
+  //   return false
+  // }
+  return numero === 10 || numero === 5
 }
+// console.log(esDiezOCinco(7));
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  // if(numero < 50 && numero > 20){
+  //      return true;
+  //    } else {
+  //    return false;
+  //   }
+  return numero < 50 && numero > 20;
 }
+// console.log(estaEnRango(42));
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
@@ -104,15 +119,28 @@ function esEntero(numero) {
   // Ejemplo: -10 -> true
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
-  // Tu código:
+  // Tu código: 
+  return numero % 1 === 0;
 }
+// console.log(esEntero(4.5));
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+
+  if (numero % 3 === 0 && numero % 5 === 0){
+    return ("fizzbuzz");
+  } else if (numero % 3 === 0){
+    return ("fizz");
+  } else if (numero % 5 === 0){
+    return ("buzz");
+  } else {
+    return (numero);
+  }
 }
+console.log(fizzBuzz(30));
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
